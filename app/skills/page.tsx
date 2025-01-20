@@ -61,42 +61,7 @@ const skillCategories = [
   }
 ];
 
-const technologies = {
-  featured: [
-    { name: "Python", icon: "🐍" },
-    { name: "SQL", icon: "📊" },
-    { name: "Tableau", icon: "📈" },
-    { name: "Power BI", icon: "📊" },
-    { name: "Alteryx", icon: "🔄" },
-    { name: "R", icon: "📘" },
-    { name: "PowerApps", icon: "⚙️" }
-  ],
-  programming: [
-    { name: "Python", icon: "🐍" },
-    { name: "SQL", icon: "📊" },
-    { name: "Alteryx", icon: "🔄" },
-    { name: "Databricks", icon: "☁️" },
-    { name: "KNIME", icon: "🔗" },
-    { name: "Orange", icon: "🍊" },
-    { name: "R", icon: "📘" }
-  ],
-  visualization: [
-    { name: "Tableau", icon: "📈" },
-    { name: "Power BI", icon: "📊" },
-    { name: "Google Looker Studio", icon: "🔍" },
-    { name: "SAP Analytics Cloud", icon: "☁️" },
-    { name: "Python", icon: "🐍" }
-  ],
-  others: [
-    { name: "QGIS", icon: "🗺️" },
-    { name: "CSS", icon: "🎨" },
-    { name: "HTML", icon: "📄" },
-    { name: "JavaScript", icon: "✨" },
-    { name: "Matlab / Scilab", icon: "🔢" },
-    { name: "Microsoft Office", icon: "📂" },
-    { name: "Google Workspace", icon: "🌐" }
-  ]
-};
+
 
 
 export default function Skills() {
@@ -143,33 +108,6 @@ export default function Skills() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 sm:mt-20 lg:mt-24">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8 sm:mb-12 lg:mb-16 text-center sm:text-left">
-            SOME TECHNOLOGIES I'VE WORKED WITH
-          </h2>
-          
-          <div className="space-y-12 sm:space-y-16">
-            {Object.entries(technologies).map(([category, techs]) => (
-              <div key={category}>
-                <h3 className="text-xl sm:text-2xl font-bold text-purple-400 mb-4 sm:mb-6 text-center sm:text-left">
-                  {category.toUpperCase()}
-                </h3>
-                <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
-                  {techs.map((tech, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center p-3 sm:p-4 bg-black/40 border border-purple-500/20 hover:border-purple-500/40 rounded-lg transition-all duration-300 gap-2"
-                    >
-                      <span className="text-xl sm:text-2xl">{tech.icon || "⚙️"}</span>
-                      <span className="text-white font-mono text-sm sm:text-base">{tech.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="mt-16 sm:mt-20 lg:mt-24 mb-8 sm:mb-12">

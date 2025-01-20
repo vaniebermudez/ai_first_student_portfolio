@@ -17,8 +17,8 @@ export default function Home() {
           <div className="space-y-6 text-center lg:text-left">
             <p className="text-purple-400">LET'S COLLABORATE</p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              I'M VANIE BERMUDEZ,<br />
-              DATA SCIENTIST / AI ENGINEER
+              VANIE BERMUDEZ,<br />
+              Data Scientist / AI Engineer
             </h1>
             <p className="text-gray-400 max-w-xl mx-auto lg:mx-0"> 
             I’m a Data Scientist and AI enthusiast with over seven years of experience working with both multinational and local companies. 
@@ -86,26 +86,26 @@ export default function Home() {
 // Only your Top 3 Projects
 
 const projects = [
-  { 
-    title: "Project_1", 
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&fit=crop",
-    problem: "Inefficient stock management leading to lost sales, excess inventory, and stock issues: 41.5%",
-    solution: "Developed an inventory optimization tool using machine learning to forecast demand and optimize stock levels, resulting in a 35% reduction in stockouts and a 40% decrease in holding costs.",
-    link : "http://github.com"
+  {
+    title: "SmartSell AI: AI for Cross-selling and Upselling",
+    image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&h=600&fit=crop",
+    problem: "Identifying effective upselling and cross-selling opportunities can be difficult for businesses, especially when dealing with large datasets. Traditional methods for developing marketing strategies are often time-consuming and lack actionable insights tailored to specific products or customer behaviors.",
+    solution: "Develop SmartSell AI, an intelligent tool that allows users to upload a dataset and receive tailored marketing strategies for upselling and cross-selling products. Using advanced machine learning and data analysis techniques, the AI identifies patterns, customer preferences, and product relationships to generate actionable strategies. This solution empowers businesses to enhance revenue, improve customer engagement, and streamline their marketing efforts.",
+    link : "https://aifirstbootcamp-smartsellai.streamlit.app/" // Github Link make sure it has https://
   },
   {
-    title: "Project_2",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&fit=crop",
-    problem: "Inefficient stock management leading to lost sales, excess inventory, and stock issues: 41.5%",
-    solution: "Developed an inventory optimization tool using machine learning to forecast demand and optimize stock levels, resulting in a 35% reduction in stockouts and a 40% decrease in holding costs.",
-    link : "http://github.com"
+    title: "Web Scraping and Insight Generation with Firecrawl and OpenAI Swarm",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    problem: "Extracting and understanding complex information from websites can be time-consuming and inefficient, especially when dealing with unstructured or large volumes of data. Traditional web scraping tools often lack the capability to provide meaningful insights beyond data extraction.",
+    solution: "Use Firecrawl to web scrape information from websites and integrate OpenAI Swarm to create multiple AI agents for collaboratively analyzing and understanding the extracted content. These AI agents specialize in tasks such as summarizing key points, identifying patterns, and categorizing information, delivering a comprehensive understanding of the website's content. This approach streamlines data extraction and interpretation, enabling faster and more informed decision-making.",
+    link : "https://github.com/vaniebermudez/ai_first_bootcamp/tree/main/Day6" // Github Link make sure it has https://
   },
   {
-    title: "Project_3",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&fit=crop",
-    problem: "Inefficient stock management leading to lost sales, excess inventory, and stock issues: 41.5%",
-    solution: "Developed an inventory optimization tool using machine learning to forecast demand and optimize stock levels, resulting in a 35% reduction in stockouts and a 40% decrease in holding costs.",
-    link : "http://github.com"
+    title: "SurePath: Your Financial Guide",
+    image: "https://images.unsplash.com/photo-1624953187665-7d41d0ade16e?w=800&h=600&fit=crop",
+    problem: "Managing personal finances can be complex, with many individuals struggling to find reliable and accessible advice on topics such as budgeting, investments, and savings. Existing resources are often too generic or require significant time and effort to navigate.",
+    solution: "Develop a financial advisor chatbot that provides instant, accurate, and personalized answers to a wide range of user financial questions. The chatbot leverages advanced AI and financial expertise to address topics like budgeting, investment strategies, and debt management in an easy-to-understand manner. By offering tailored guidance, the chatbot empowers users to make informed financial decisions efficiently and confidently.",
+    link : "https://aifirstbootcamp-surepath-urfinancialguide.streamlit.app/" // Github Link make sure it has https://
   },
   
 ];
