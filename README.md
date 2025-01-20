@@ -1,2 +1,1 @@
-# ai_first_student_portfolio
- 
+# AI-Republic-Student-Portfolio-Template
