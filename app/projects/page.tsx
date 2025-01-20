@@ -8,12 +8,12 @@ import { ArrowRight, Terminal } from 'lucide-react';
 // Add your Projects Here
 const projects = [
   {
-    title: "Project_1",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    problem: "Problem",
-    solution: "Solution",
-    tools: ["Python", "TensorFlow", "Apache Kafka", "MongoDB"],
-    link : "https://www.Github.com" // Github Link make sure it has https://
+    title: "Finetuning LLM and Inferencing",
+    image: "https://plus.unsplash.com/premium_photo-1661779386497-1f7b9ec4d8f3?w=800&h=600&fit=crop",
+    problem: "Skin-related issues are prevalent, yet providing accurate and accessible dermatological advice remains challenging due to the specialized knowledge required. Current conversational AI models lack fine-tuning for domain-specific queries, limiting their effectiveness in addressing diverse dermatological concerns.",
+    solution: "Fine-tune the GEMMA2B model using a carefully curated dermatology-focused Q&A dataset to enhance its ability to generate accurate and empathetic responses. The dataset will include diverse questions, medical terminology, and layman's language to ensure accessibility. By adapting GEMMA2B to this specialized domain, the solution aims to deliver a conversational AI capable of providing reliable dermatological advice while adhering to ethical and medical standards.",
+    tools: ["Python", "GEMMA2B", "Hugging Face", "CUDA"],
+    link : "https://github.com/vaniebermudez/ai_first_bootcamp/tree/main/Day2" // Github Link make sure it has https://
   },
   {
     title: "Project_2",
