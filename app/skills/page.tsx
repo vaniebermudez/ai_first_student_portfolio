@@ -16,87 +16,88 @@ const skillCategories = [
   {
     title: "FEATURED",
     skills: [
-      { name: "Python" },
-      { name: "SQL"},
-      { name: "Tableau"},
-      { name: "Power BI" },
-      { name: "Alteryx" },
-      { name: "R" },
-      { name: "PowerApps" }
+      { name: "Python", icon: "🐍" },
+      { name: "SQL", icon: "📊" },
+      { name: "Tableau", icon: "📈" },
+      { name: "Power BI", icon: "📊" },
+      { name: "Alteryx", icon: "🔄" },
+      { name: "R", icon: "📘" },
+      { name: "PowerApps", icon: "⚙️" }
     ]
   },
   {
     title: "PROGRAMMING / AUTOMATION",
     skills: [
-      { name: "Python" },
-      { name: "SQL"},
-      { name: "Alteryx" },
-      { name: "Databricks" },
-      { name: "KNIME" },
-      { name: "Orange" },
-      { name: "R" }
+      { name: "Python", icon: "🐍" },
+      { name: "SQL", icon: "📊" },
+      { name: "Alteryx", icon: "🔄" },
+      { name: "Databricks", icon: "☁️" },
+      { name: "KNIME", icon: "🔗" },
+      { name: "Orange", icon: "🍊" },
+      { name: "R", icon: "📘" }
     ]
   },
   {
     title: "DATA VISUALIZATION",
     skills: [
-      { name: "Tableau" },
-      { name: "Power BI"},
-      { name: "Google Looker Studio" },
-      { name: "SAP Analytics Cloud" },
-      { name: "Python" }
+      { name: "Tableau", icon: "📈" },
+      { name: "Power BI", icon: "📊" },
+      { name: "Google Looker Studio", icon: "🔍" },
+      { name: "SAP Analytics Cloud", icon: "☁️" },
+      { name: "Python", icon: "🐍" }
     ]
   },
   {
     title: "OTHER SKILLS",
     skills: [
-      { name: "QGIS" },
-      { name: "CSS"},
-      { name: "HTML" },
-      { name: "JavaScript" },
-      { name: "Matlab / Scilab" },
-      { name: "Microsoft Office" },
-      { name: "Google Workspace" }
+      { name: "QGIS", icon: "🗺️" },
+      { name: "CSS", icon: "🎨" },
+      { name: "HTML", icon: "📄" },
+      { name: "JavaScript", icon: "✨" },
+      { name: "Matlab / Scilab", icon: "🔢" },
+      { name: "Microsoft Office", icon: "📂" },
+      { name: "Google Workspace", icon: "🌐" }
     ]
   }
 ];
 
 const technologies = {
   featured: [
-    { name: "Python" },
-      { name: "SQL"},
-      { name: "Tableau" },
-      { name: "Power BI" },
-      { name: "Alteryx" },
-      { name: "R" },
-      { name: "PowerApps" }
+    { name: "Python", icon: "🐍" },
+    { name: "SQL", icon: "📊" },
+    { name: "Tableau", icon: "📈" },
+    { name: "Power BI", icon: "📊" },
+    { name: "Alteryx", icon: "🔄" },
+    { name: "R", icon: "📘" },
+    { name: "PowerApps", icon: "⚙️" }
   ],
   programming: [
-    { name: "Python" },
-    { name: "SQL"},
-    { name: "Alteryx" },
-    { name: "Databricks" },
-    { name: "KNIME" },
-    { name: "Orange" },
-    { name: "R" }
+    { name: "Python", icon: "🐍" },
+    { name: "SQL", icon: "📊" },
+    { name: "Alteryx", icon: "🔄" },
+    { name: "Databricks", icon: "☁️" },
+    { name: "KNIME", icon: "🔗" },
+    { name: "Orange", icon: "🍊" },
+    { name: "R", icon: "📘" }
   ],
   visualization: [
-    { name: "Tableau" },
-      { name: "Power BI"},
-      { name: "Google Looker Studio" },
-      { name: "SAP Analytics Cloud" },
-      { name: "Python" }
+    { name: "Tableau", icon: "📈" },
+    { name: "Power BI", icon: "📊" },
+    { name: "Google Looker Studio", icon: "🔍" },
+    { name: "SAP Analytics Cloud", icon: "☁️" },
+    { name: "Python", icon: "🐍" }
   ],
   others: [
-    { name: "QGIS" },
-      { name: "CSS"},
-      { name: "HTML" },
-      { name: "JavaScript" },
-      { name: "Matlab / Scilab" },
-      { name: "Microsoft Office" },
-      { name: "Google Workspace" }
+    { name: "QGIS", icon: "🗺️" },
+    { name: "CSS", icon: "🎨" },
+    { name: "HTML", icon: "📄" },
+    { name: "JavaScript", icon: "✨" },
+    { name: "Matlab / Scilab", icon: "🔢" },
+    { name: "Microsoft Office", icon: "📂" },
+    { name: "Google Workspace", icon: "🌐" }
   ]
 };
+
 
 export default function Skills() {
   const [formData, setFormData] = useState({
@@ -135,7 +136,7 @@ export default function Skills() {
                     key={skillIndex}
                     className="py-2 sm:py-3 px-3 sm:px-4 bg-black/40 hover:bg-black/60 border border-purple-500/20 hover:border-purple-500/40 text-white transition-all duration-300 text-sm sm:text-base flex items-center justify-center"
                   >
-                    <span className="mr-2 text-base sm:text-lg">{skill.icon}</span>
+                    <span className="mr-2 text-base sm:text-lg">{skill.icon || "⚙️"}</span>
                     {skill.name}
                   </Badge>
                 ))}
@@ -161,7 +162,7 @@ export default function Skills() {
                       key={index}
                       className="flex items-center justify-center p-3 sm:p-4 bg-black/40 border border-purple-500/20 hover:border-purple-500/40 rounded-lg transition-all duration-300 gap-2"
                     >
-                      <span className="text-xl sm:text-2xl">{tech.icon}</span>
+                      <span className="text-xl sm:text-2xl">{tech.icon || "⚙️"}</span>
                       <span className="text-white font-mono text-sm sm:text-base">{tech.name}</span>
                     </div>
                   ))}
