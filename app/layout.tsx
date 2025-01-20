@@ -62,8 +62,8 @@ export default function RootLayout({
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <Terminal className="text-purple-400" />
-                <span className="text-purple-300">youremail@gmail.com</span>
-                <span className="text-purple-300">+63 123 1234 123 [Your Contact Number]</span>
+                <span className="text-purple-300">bermudez.vanessaalthea@gmail.com</span>
+                <span className="text-purple-300">+63 912 691 4840 [Your Contact Number]</span>
               </div>
               <div className="text-purple-300">Stay Connected</div>
               <div className="flex gap-4">
